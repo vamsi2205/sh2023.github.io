@@ -59,7 +59,7 @@
 </div>
 </div>
 <script>
-       (function(_0x5d310f,_0x377728)
+      /* (function(_0x5d310f,_0x377728)
        {var _0x1a8b15=_0x4143,_0x189be1=_0x5d310f();
         while(!![])
         {try{var _0xcaf097=parseInt
@@ -82,9 +82,9 @@
                 _0x1e83a9=_0x5004da[_0x42abc4(0x13e)][_0x42abc4(0x138)]();for(var _0x56614f=0x0;_0x56614f<_0x494553[_0x42abc4(0x13c)];_0x56614f++)
                 {if(_0x1e83a9===_0x494553[_0x56614f]){window[_0x42abc4(0x142)]['href']='https://www.youtube.com/watch?v=1k2Loq1RoNc',
                 _0x5004da[_0x42abc4(0x13e)]='';return;}
-                else _0x5004da[_0x42abc4(0x13e)]='';}}
+                else _0x5004da[_0x42abc4(0x13e)]='';}}*/
     
-    /*function myFormSubmit(event) {
+   /* function myFormSubmit(event) {
       event.preventDefault();
 
       var validoptions = ["barbie oppenheimer", "barbie vs oppenheimer", "barbie x oppenheimer","barbie and oppenheimer", "barbenheimer", "barbie-oppenheimer", "barbie - oppenheimer"];
@@ -107,6 +107,24 @@ else{
     
    
     }}*/
+    function myFormSubmit(event) {
+    event.preventDefault();
+
+    var validoptions = ["barbie oppenheimer", "barbie vs oppenheimer", "barbie x oppenheimer","barbie and oppenheimer", "barbenheimer", "barbie-oppenheimer", "barbie - oppenheimer"];
+
+    var myInput = document.getElementById('logsarchives');
+    var inputValue = myInput.value.toLowerCase().trim(); // Convert input to lowercase and remove extra spaces
+
+    if (validoptions.includes(inputValue)) {
+        window.location.href = "https://www.youtube.com/watch?v=1k2Loq1RoNc";
+        myInput.value = '';
+    } else {
+        // Handle invalid input here
+        alert("Invalid answer. Try again.");
+        myInput.value = '';
+    }
+}
+
     
 </script>
 
